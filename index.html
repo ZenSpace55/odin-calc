@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <script src="draw.js" defer></script>
+    <script src="calc.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -15,25 +15,25 @@
             <p class="calcTextMain">884</p>
         </div>
         <div class="calcButtonField">
-            <div class="calcButton tealButton">Back</div>
-            <div class="calcButton tealButton">Clear</div>
-            <div class="calcButton orangeButton">/</div>
-            <div class="calcButton orangeButton">X</div>
-            <div class="calcButton numButton">7</div>
-            <div class="calcButton numButton">8</div>
-            <div class="calcButton numButton">9</div>
-            <div class="calcButton orangeButton">-</div>
-            <div class="calcButton numButton">4</div>
-            <div class="calcButton numButton">5</div>
-            <div class="calcButton numButton">6</div>
-            <div class="calcButton orangeButton">+</div>
-            <div class="calcButton numButton">1</div>
-            <div class="calcButton numButton">2</div>
-            <div class="calcButton numButton">3</div>
-            <div class="calcButton bigButtonB orangeButton">=</div>
-            <div class="calcButton tealButton">.</div>
-            <div class="calcButton numButton">0</div>
+            <div onclick="backspace()" class="calcButton tealButton">Back</div>
+            <div onclick="clearInput()" class="calcButton tealButton">Clear</div>
             <div class="calcButton tealButton">+/-</div>
+            <div onclick="operationButton(0)" class="calcButton orangeButton">÷</div>
+            <div onclick="pressNumButton(7)" class="calcButton numButton">7</div>
+            <div onclick="pressNumButton(8)" class="calcButton numButton">8</div>
+            <div onclick="pressNumButton(9)" class="calcButton numButton">9</div>
+            <div onclick="operationButton(1)" class="calcButton orangeButton">×</div>
+            <div onclick="pressNumButton(4)" class="calcButton numButton">4</div>
+            <div onclick="pressNumButton(5)" class="calcButton numButton">5</div>
+            <div onclick="pressNumButton(6)" class="calcButton numButton">6</div>
+            <div onclick="operationButton(2)"class="calcButton orangeButton">-</div>
+            <div onclick="pressNumButton(1)" class="calcButton numButton">1</div>
+            <div onclick="pressNumButton(2)" class="calcButton numButton">2</div>
+            <div onclick="pressNumButton(3)" class="calcButton numButton">3</div>
+            <div onclick="operationButton(3)" class="calcButton orangeButton">+</div>
+            <div class="calcButton tealButton">.</div>
+            <div onclick="pressNumButton(0)" class="calcButton numButton">0</div>
+            <div onclick="calculate()" class="calcButton bigButtonB">=</div>
 
         </div>
     </div>
