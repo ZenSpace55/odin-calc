@@ -11,13 +11,13 @@
 <body>
     <div class="calcBody">
         <div class="calcDisplay">
-            <p class="calcTextHistory">History goes here...</p>
-            <p class="calcTextMain">884</p>
+            <p class="calcTextHistory"></p>
+            <p class="calcTextMain"></p>
         </div>
         <div class="calcButtonField">
             <div onclick="backspace()" class="calcButton tealButton">Back</div>
             <div onclick="clearInput()" class="calcButton tealButton">Clear</div>
-            <div class="calcButton tealButton">+/-</div>
+            <div onclick="inverse()" class="calcButton tealButton">+/-</div>
             <div onclick="operationButton(0)" class="calcButton orangeButton">÷</div>
             <div onclick="pressNumButton(7)" class="calcButton numButton">7</div>
             <div onclick="pressNumButton(8)" class="calcButton numButton">8</div>
@@ -31,7 +31,7 @@
             <div onclick="pressNumButton(2)" class="calcButton numButton">2</div>
             <div onclick="pressNumButton(3)" class="calcButton numButton">3</div>
             <div onclick="operationButton(3)" class="calcButton orangeButton">+</div>
-            <div class="calcButton tealButton">.</div>
+            <div onclick="decimal()" class="calcButton tealButton">.</div>
             <div onclick="pressNumButton(0)" class="calcButton numButton">0</div>
             <div onclick="calculate()" class="calcButton bigButtonB">=</div>
 
