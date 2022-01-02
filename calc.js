@@ -27,6 +27,9 @@ function addToHistory(currentText){
 }
 
 function operationButton(mathFunc){
+    if (historyText.textContent != ""){
+        calculate();
+    }
     firstNum = mainText.textContent;
     historyText.textContent = mainText.textContent;
     mainText.textContent = "";
